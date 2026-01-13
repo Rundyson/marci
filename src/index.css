@@ -85,10 +85,10 @@
 .nav li{
   @apply cursor-pointer hover:italic;
 }
-.three-image img {
-  @apply cursor-pointer hover:scale-110 transition-all 
-}
 
+.logos {
+  @apply grid grid-cols-4 gap-10 mt-5 p-5 bg-white/10 rounded-md
+}
 
 }
 @layer utilities {

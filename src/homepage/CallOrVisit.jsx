@@ -19,11 +19,11 @@ function CallOrVisit() {
   ]
 
   return (
-    <section className='relative bg-[url("/images/bg-call.jpg")] bg-cover  py-10'>
+    <section id='contact' className='relative bg-[url("/images/bg-call.jpg")] bg-cover overflow-hidden  py-10'>
       <div className="absolute inset-0 bg-black/80 z-0"></div>
       <div className="container">
-        <div className="two-way-contacts flex gap-10 relative">
-          <div className="left-contact flex flex-col gap-5 w-1/2 text-white">
+        <div className="two-way-contacts flex md:flex-row sm:flex-col gap-10 relative md:px-0 sm:px-4">
+          <div className="left-contact flex flex-col gap-5 sm:w-full md:w-1/2 text-white">
             <h2>Send Message</h2>
             <TextArea
               placeholder="Name"
@@ -31,11 +31,14 @@ function CallOrVisit() {
               onChange={(e) => setName(e.target.value)}
             />
             <TextArea
+           
               placeholder="Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
             <textarea
+           
+       
               className="w-full p-3 rounded-lg border border-white bg-transparent
                  focus:backdrop-blur-md focus:ring-2 focus:ring-gray-400 
                  focus:outline-none transition placeholder-gray-400
@@ -50,7 +53,8 @@ function CallOrVisit() {
             </span>
           </div>
 
-          <div className="right-contact w-1/2 text-white/70">
+          <div  
+             className="right-contact sm:w-full md:w-1/2 text-white/70">
             <div className="relative inline-block group">
               <div className="info-upper mb-10">
                 <h2>Marci Metzger - THE RIDGE REALTY GROUP</h2>

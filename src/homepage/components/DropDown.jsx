@@ -25,7 +25,7 @@ function DropDown({ options = [], placeholder = "Select Option", onSelect }) {
       </button>
 
       {open && (
-        <div className="absolute left-0 mt-1 w-full bg-transparent backdrop-blur-sm shadow-lg rounded-md p-1 z-20">
+        <div className="absolute left-0 mt-1 w-full bg-black/40 border sm:text-xs border-slate-100 backdrop-blur-sm shadow-lg rounded-md p-1 z-20">
           {options.map((item, index) => (
             <div
               key={index}

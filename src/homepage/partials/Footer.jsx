@@ -21,8 +21,8 @@ function Footer() {
             <Twitter size={25} />
           </li>
         </ul>
-        <p className="border-b pb-4 border-">
-          Copyright © 2025 Marci METZGER Homes - All Rights Reserved
+        <p className="border-b pb-4 border-white sm:text-[10px]">
+          Copyright © 2026 Marci METZGER Homes - All Rights Reserved
         </p>
 
       </div>
